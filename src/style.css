@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow&display=swap');
+
+
+* {
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    margin: 0%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr 3fr 1fr 1fr 1fr;
+    font-family: 'Barlow', sans-serif;
+}
+
+.header {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.headerRight {    
+    display: flex;
+    justify-content: space-between;
+    padding-left: 70px;
+}
+
+.headerLeft {
+    display: flex;
+    width: 300px;
+    gap: 20px;
+    padding-right: 30px;
+}
+
+.inputContanier {
+    display: flex;
+    align-items: center;
+    padding-left: 50px;
+
+}
+
+.textInput {
+        padding: 5px;
+        font-size: 16px;
+        border-width: 1px;
+        border-color: #CCCCCC;
+        background-color: #FFFFFF;
+        color: #000000;
+        border-style: solid;
+        border-radius: 0px;
+        box-shadow: 0px 0px 5px rgba(66,66,66,.75);
+        border-radius: 6px;
+
+}
+
+.textInput:focus {
+        outline:none;
+}
+
+.submit {
+    width: 70px;
+    height: 30px;
+    border-radius: 6px;
+    background-color: skyblue;
+    color: lightyellow;
+
+}
+
+.submit:focus {
+    background-color: #424242;
+}
+
+
+.temps {
+    display: flex;
+    gap: 10px;
+}
+
+.changeTemp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.changeTempC, .changeTempF  {
+    height: 30px;
+    width: 70px;
+    border-radius: 5px;
+}
+
+.location {
+    font-size: 50px;
+    margin-bottom: 20px;
+    font-weight: 900;
+}
+
+.condition {
+    margin-top: 0%;
+    font-size: 20px;
+}
+
+.temp {
+    font-size: 50px;
+}
+
+.changeTempC, .changeTempF {
+    background-color: #FFFFFF;
+}
+
+.tempToday {
+    padding-left: 25%;
+    padding-right: 25%;
+    display: grid;
+    grid-template-columns: repeat(24, 1fr);
+}
+
+.tempTodayContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.currentTemp {
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#tempToday0 {
+    flex-direction: column;
+    display: flex;
+}
+
+.container {
+    background-color: #424242;
+    color: white;
+    padding-left: 25%;
+    padding-right: 25%;
+    display: flex;
+    flex-direction: column;
+}
+
+.container-top, .container-bottom {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+
+}
+
+li {
+    list-style: none;
+} 
+
+.titles, .dayOne, .dayTwo {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: solid black 2px;
+    text-align: center;
+}
+
+.upcomingDays {
+    padding-left: 25%;
+    padding-right: 25%;
+}
